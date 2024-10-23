@@ -6,3 +6,5 @@ data_fetching.ipynv: Downloads the dataset files from Kaggle and stores them in 
 data_cleaning.ipynb: Contains various steps for cleaning the dataset considering various factors and conditions and store the cleaned datasets in cleaned_datsets directory. 
 
 Our Individual Scripts are added to the **individual_scripts** folder
+
+Please put your team's information (e.g. team members name, ub number, email) and topic in this file. (Delete this message after you have done so)
