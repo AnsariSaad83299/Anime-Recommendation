@@ -1,4 +1,16 @@
 # Anime-Recommendation
+
+In this project we are working on creating a anime recommendation engine using user watch history and demographic data like user's location, age and gender.
+
+## Team members:
+| Name | UB Number | Email |
+| :---: | :---: | :---: |
+| Saad Ansari | 50607542| mohdsaad@buffalo.edu |
+| Seokwoo Park | 50608072 | seokwoop@buffalo.edu |
+| Ramachandran Kulothungan | 50611273 | rkulothu@buffalo.edu |
+| Rutuja Badve | 50604168 | rutujara@buffalo.edu | 
+
+## Description:
 We have multiple Notebooks that currently serve different purposes.
 
 data_fetching.ipynv: Downloads the dataset files from Kaggle and stores them in datasets directory.
@@ -7,4 +19,3 @@ data_cleaning.ipynb: Contains various steps for cleaning the dataset considering
 
 Our Individual Scripts are added to the **individual_scripts** folder
 
-Please put your team's information (e.g. team members name, ub number, email) and topic in this file. (Delete this message after you have done so)
