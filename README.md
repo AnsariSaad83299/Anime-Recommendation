@@ -22,4 +22,5 @@ Our Individual Scripts and reports are added to the **individual_scripts** folde
 ## Mohd Saad Mohd Intesar Ansari (50607542):
 - **Question 1:** Do people like long animes or short animes?
 - **Question 2:** which Genres are the most popular?
+- **Code Location:** `individual_scripts/Saad/MohdSaad_50607542_phase2.ipynb` and `individual_scripts/Saad/MohdSaad_50607542_phase2.pdf`
 
