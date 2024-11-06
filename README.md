@@ -41,3 +41,13 @@ Our Individual Scripts and reports are added to the **individual_scripts** folde
 - **Code Location:** individual_scripts/Rutuja/RutujaBadve_50604168_phase2.ipynb and individual_scripts/Rutuja/RutujaBadve_50604168_phase2.pdf
 - **Analysis for Question1:** page 2 and page 3 of individual_scripts/Rutuja/RutujaBadve_50604168_phase2.pdf
 - **Analysis for Question2:** page 5 and page 6 of individual_scripts/Rutuja/RutujaBadve_50604168_phase2.pdf
+SW Park
+11:41 PM
+Phase2_Problem1_50608072.ipynb
+Phase2_Problem2_50608072.ipynb
+SW Park
+11:51 PM
+## Seokwoo Park (50608072):
+- **Question 1:** By training Collaborative Filtering on specific anime ratings, I can predict how users with similar tastes would rate them.
+- **Question 2:** The completion rate ('Completed / Total Entries') is expected to increase with both higher age group concentrations and longer Days Watched values.
+- **Code Location:** `individual_scripts/Park/Phase2_Problem1_50608072.ipynb` and `individual_scripts/Saad/Phase2_Problem2_50608072.ipynb`
