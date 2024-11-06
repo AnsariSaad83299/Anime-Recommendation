@@ -1,3 +1,7 @@
 kaggle
 numpy
 pandas
+statsmodels
+scikit-learn
+seaborn
+catboost
