@@ -24,3 +24,14 @@ Our Individual Scripts and reports are added to the **individual_scripts** folde
 - **Question 2:** which Genres are the most popular?
 - **Code Location:** `individual_scripts/Saad/MohdSaad_50607542_phase2.ipynb` and `individual_scripts/Saad/MohdSaad_50607542_phase2.pdf`
 
+## Ramachandran Kulothungan  (50611273):
+- **Question 1:** Does user's demographic(location, age, gender) impact type of anime(genre, episodes, anime type(OVA, movie), Rank) they are prefer?
+- **Question 2:** Can we identify users who have similar viewing habits and recommend anime based on these similarities?
+- **Files:**
+  -   **Phase1** [EDA]([https://duckduckgo.com](https://github.com/AnsariSaad83299/Anime-Recommendation/blob/main/individual_scripts/RC/RC_EDA.ipynb)), [Report](https://github.com/AnsariSaad83299/Anime-Recommendation/blob/main/individual_scripts/RC/RC_EDA.pdf)
+  -   **Phase2**
+    - [Additional EDA](https://github.com/AnsariSaad83299/Anime-Recommendation/blob/main/individual_scripts/RC/RC_EDA_additional.ipynb),[Additional EDA report](https://github.com/AnsariSaad83299/Anime-Recommendation/blob/main/individual_scripts/RC/RC_EDA_additional.pdf)
+    - [Question 1 Analysis- Algo 1](https://github.com/AnsariSaad83299/Anime-Recommendation/blob/main/individual_scripts/RC/RC_ML_Analysis1.ipynb), [Question 1 Analysis Report- Algo 1](https://github.com/AnsariSaad83299/Anime-Recommendation/blob/main/individual_scripts/RC/RC_ML_Analysis1.pdf)
+    - [Question 1 Analysis- Algo 2](https://github.com/AnsariSaad83299/Anime-Recommendation/blob/main/individual_scripts/RC/RC_ML_Analysis2.ipynb), [Question 1 Analysis Report- Algo 2](https://github.com/AnsariSaad83299/Anime-Recommendation/blob/main/individual_scripts/RC/RC_ML_Analysis2.pdf)
+    - [Question 2 Analysis- Algo 1](https://github.com/AnsariSaad83299/Anime-Recommendation/blob/main/individual_scripts/RC/RC_ML_Analysis3.ipynb), [Question 2 Analysis Report- Algo 1](https://github.com/AnsariSaad83299/Anime-Recommendation/blob/main/individual_scripts/RC/RC_ML_Analysis3.pdf)
+    - [Question 2 Analysis- Algo 2](https://github.com/AnsariSaad83299/Anime-Recommendation/blob/main/individual_scripts/RC/RC_ML_Analysis4.ipynb), [Question 2 Analysis Report- Algo 2](https://github.com/AnsariSaad83299/Anime-Recommendation/blob/main/individual_scripts/RC/RC_ML_Analysis4.pdf)
