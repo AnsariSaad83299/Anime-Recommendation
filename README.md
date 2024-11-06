@@ -35,3 +35,9 @@ Our Individual Scripts and reports are added to the **individual_scripts** folde
     - [Question 1 Analysis- Algo 2](https://github.com/AnsariSaad83299/Anime-Recommendation/blob/main/individual_scripts/RC/RC_ML_Analysis2.ipynb), [Question 1 Analysis Report- Algo 2](https://github.com/AnsariSaad83299/Anime-Recommendation/blob/main/individual_scripts/RC/RC_ML_Analysis2.pdf)
     - [Question 2 Analysis- Algo 1](https://github.com/AnsariSaad83299/Anime-Recommendation/blob/main/individual_scripts/RC/RC_ML_Analysis3.ipynb), [Question 2 Analysis Report- Algo 1](https://github.com/AnsariSaad83299/Anime-Recommendation/blob/main/individual_scripts/RC/RC_ML_Analysis3.pdf)
     - [Question 2 Analysis- Algo 2](https://github.com/AnsariSaad83299/Anime-Recommendation/blob/main/individual_scripts/RC/RC_ML_Analysis4.ipynb), [Question 2 Analysis Report- Algo 2](https://github.com/AnsariSaad83299/Anime-Recommendation/blob/main/individual_scripts/RC/RC_ML_Analysis4.pdf)
+## Rutuja Badve (50604168):
+- **Question 1:** Do different age groups prefer anime with varying durations?
+- **Question 2:** Does the number of episodes affect the score of anime?
+- **Code Location:** individual_scripts/Rutuja/RutujaBadve_50604168_phase2.ipynb and individual_scripts/Rutuja/RutujaBadve_50604168_phase2.pdf
+- **Analysis for Question1:** page 2 and page 3 of individual_scripts/Rutuja/RutujaBadve_50604168_phase2.pdf
+- **Analysis for Question2:** page 5 and page 6 of individual_scripts/Rutuja/RutujaBadve_50604168_phase2.pdf
