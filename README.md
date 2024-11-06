@@ -19,3 +19,7 @@ data_cleaning.ipynb: Contains various steps for cleaning the dataset considering
 
 Our Individual Scripts and reports are added to the **individual_scripts** folder
 
+## Mohd Saad Mohd Intesar Ansari (50607542):
+**Question 1:** Do people like long animes or short animes?
+**Question 2:** which Genres are the most popular?
+
