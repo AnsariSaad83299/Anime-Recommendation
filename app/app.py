@@ -9,5 +9,3 @@ test = st.Page("test_st.py", title="Test streamlit features")
 st.navigation(
     [home, logistic_page, content_based, collaborative, demographic, test]
     ).run()
-
-
