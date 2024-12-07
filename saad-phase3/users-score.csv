@@ -1,0 +1,146 @@
+user_id,Username,anime_id,Anime Title,rating
+1,Xinil,48,.hack//Sign,7
+1,Xinil,49,Aa! Megami-sama!,8
+1,Xinil,1,Cowboy Bebop,10
+1,Xinil,16,Hachimitsu to Clover,8
+1,Xinil,17,Hungry Heart: Wild Striker,7
+1,Xinil,18,Initial D Fourth Stage,8
+1,Xinil,33,Kenpuu Denki Berserk,9
+1,Xinil,19,Monster,9
+1,Xinil,20,Naruto,7
+1,Xinil,30,Neon Genesis Evangelion,10
+1,Xinil,45,Rurouni Kenshin: Meiji Kenkaku Romantan,8
+1,Xinil,44,Rurouni Kenshin: Meiji Kenkaku Romantan - Tsuioku-hen,10
+1,Xinil,24,School Rumble,9
+1,Xinil,25,Sunabouzu,8
+1,Xinil,6,Trigun,10
+1,Xinil,7,Witch Hunter Robin,9
+1,Xinil,15,Eyeshield 21,7
+1,Xinil,22,Tennis no Ouji-sama,7
+1,Xinil,8,Bouken Ou Beet,6
+4,Crystal,49,Aa! Megami-sama!,6
+4,Crystal,1,Cowboy Bebop,8
+9,Arcane,20,Naruto,9
+9,Arcane,49,Aa! Megami-sama!,9
+9,Arcane,30,Neon Genesis Evangelion,4
+9,Arcane,45,Rurouni Kenshin: Meiji Kenkaku Romantan,8
+9,Arcane,24,School Rumble,9
+9,Arcane,6,Trigun,8
+9,Arcane,22,Tennis no Ouji-sama,5
+20,vondur,1,Cowboy Bebop,9
+20,vondur,33,Kenpuu Denki Berserk,9
+20,vondur,20,Naruto,6
+20,vondur,45,Rurouni Kenshin: Meiji Kenkaku Romantan,9
+20,vondur,22,Tennis no Ouji-sama,8
+20,vondur,6,Trigun,8
+23,Amuro,1,Cowboy Bebop,9
+23,Amuro,15,Eyeshield 21,7
+23,Amuro,18,Initial D Fourth Stage,7
+23,Amuro,20,Naruto,7
+23,Amuro,30,Neon Genesis Evangelion,1
+23,Amuro,25,Sunabouzu,7
+23,Amuro,22,Tennis no Ouji-sama,9
+23,Amuro,26,Texhnolyze,4
+23,Amuro,6,Trigun,8
+37,megan,49,Aa! Megami-sama!,8
+37,megan,7,Witch Hunter Robin,9
+47,kei-clone,1,Cowboy Bebop,7
+47,kei-clone,30,Neon Genesis Evangelion,7
+47,kei-clone,44,Rurouni Kenshin: Meiji Kenkaku Romantan - Tsuioku-hen,10
+47,kei-clone,24,School Rumble,9
+47,kei-clone,48,.hack//Sign,5
+47,kei-clone,16,Hachimitsu to Clover,6
+47,kei-clone,45,Rurouni Kenshin: Meiji Kenkaku Romantan,6
+47,kei-clone,20,Naruto,8
+48,seif,48,.hack//Sign,8
+48,seif,20,Naruto,6
+48,seif,30,Neon Genesis Evangelion,6
+48,seif,45,Rurouni Kenshin: Meiji Kenkaku Romantan,7
+48,seif,44,Rurouni Kenshin: Meiji Kenkaku Romantan - Tsuioku-hen,9
+48,seif,27,Trinity Blood,7
+48,seif,7,Witch Hunter Robin,6
+48,seif,24,School Rumble,7
+48,seif,26,Texhnolyze,5
+53,Ladholyman,1,Cowboy Bebop,10
+53,Ladholyman,44,Rurouni Kenshin: Meiji Kenkaku Romantan - Tsuioku-hen,9
+66,Hiromi,19,Monster,7
+66,Hiromi,48,.hack//Sign,8
+66,Hiromi,16,Hachimitsu to Clover,9
+66,Hiromi,24,School Rumble,8
+66,Hiromi,7,Witch Hunter Robin,8
+66,Hiromi,20,Naruto,7
+67,ShadowOz,48,.hack//Sign,8
+67,ShadowOz,1,Cowboy Bebop,10
+67,ShadowOz,18,Initial D Fourth Stage,10
+67,ShadowOz,20,Naruto,7
+67,ShadowOz,30,Neon Genesis Evangelion,9
+67,ShadowOz,44,Rurouni Kenshin: Meiji Kenkaku Romantan - Tsuioku-hen,10
+67,ShadowOz,6,Trigun,10
+67,ShadowOz,45,Rurouni Kenshin: Meiji Kenkaku Romantan,9
+70,Cruzle,1,Cowboy Bebop,8
+70,Cruzle,16,Hachimitsu to Clover,8
+70,Cruzle,17,Hungry Heart: Wild Striker,8
+70,Cruzle,18,Initial D Fourth Stage,8
+70,Cruzle,33,Kenpuu Denki Berserk,8
+70,Cruzle,30,Neon Genesis Evangelion,8
+70,Cruzle,45,Rurouni Kenshin: Meiji Kenkaku Romantan,8
+70,Cruzle,44,Rurouni Kenshin: Meiji Kenkaku Romantan - Tsuioku-hen,9
+70,Cruzle,24,School Rumble,9
+70,Cruzle,25,Sunabouzu,7
+70,Cruzle,22,Tennis no Ouji-sama,9
+70,Cruzle,26,Texhnolyze,7
+70,Cruzle,6,Trigun,9
+70,Cruzle,20,Naruto,6
+71,Smoka,48,.hack//Sign,3
+71,Smoka,49,Aa! Megami-sama!,7
+71,Smoka,18,Initial D Fourth Stage,8
+71,Smoka,19,Monster,9
+71,Smoka,20,Naruto,7
+71,Smoka,45,Rurouni Kenshin: Meiji Kenkaku Romantan,7
+71,Smoka,6,Trigun,8
+72,james2k,1,Cowboy Bebop,9
+72,james2k,18,Initial D Fourth Stage,9
+72,james2k,33,Kenpuu Denki Berserk,10
+72,james2k,30,Neon Genesis Evangelion,8
+72,james2k,6,Trigun,9
+72,james2k,27,Trinity Blood,7
+72,james2k,45,Rurouni Kenshin: Meiji Kenkaku Romantan,9
+72,james2k,20,Naruto,6
+80,koalatees,16,Hachimitsu to Clover,10
+80,koalatees,28,Yakitate!! Japan,8
+81,Ramp,48,.hack//Sign,8
+81,Ramp,1,Cowboy Bebop,9
+81,Ramp,33,Kenpuu Denki Berserk,8
+81,Ramp,19,Monster,9
+81,Ramp,20,Naruto,8
+81,Ramp,45,Rurouni Kenshin: Meiji Kenkaku Romantan,7
+81,Ramp,44,Rurouni Kenshin: Meiji Kenkaku Romantan - Tsuioku-hen,10
+81,Ramp,25,Sunabouzu,9
+81,Ramp,6,Trigun,9
+81,Ramp,27,Trinity Blood,8
+81,Ramp,29,Zipang,6
+82,Achtor,16,Hachimitsu to Clover,10
+82,Achtor,33,Kenpuu Denki Berserk,7
+82,Achtor,30,Neon Genesis Evangelion,10
+82,Achtor,24,School Rumble,8
+83,jaames,1,Cowboy Bebop,9
+83,jaames,30,Neon Genesis Evangelion,10
+88,wicked2k,1,Cowboy Bebop,8
+88,wicked2k,15,Eyeshield 21,9
+88,wicked2k,16,Hachimitsu to Clover,7
+88,wicked2k,17,Hungry Heart: Wild Striker,9
+91,marvin_9martian,49,Aa! Megami-sama!,6
+91,marvin_9martian,19,Monster,10
+91,marvin_9martian,20,Naruto,8
+91,marvin_9martian,45,Rurouni Kenshin: Meiji Kenkaku Romantan,9
+91,marvin_9martian,44,Rurouni Kenshin: Meiji Kenkaku Romantan - Tsuioku-hen,9
+91,marvin_9martian,22,Tennis no Ouji-sama,8
+91,marvin_9martian,6,Trigun,7
+91,marvin_9martian,7,Witch Hunter Robin,8
+91,marvin_9martian,48,.hack//Sign,8
+91,marvin_9martian,50,Aa! Megami-sama! (TV),1
+91,marvin_9martian,1,Cowboy Bebop,7
+91,marvin_9martian,30,Neon Genesis Evangelion,7
+95,sorairo,18,Initial D Fourth Stage,8
+95,sorairo,20,Naruto,8
+95,sorairo,19,Monster,8
