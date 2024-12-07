@@ -93,14 +93,9 @@ def predict_watching_stats(age, days_watched, model, scaler):
     }
 
 def predict_single_user(age, days_watched, model, scaler):
-    """
-    모델로부터 학습된 age별 rate를 사용하는 예측 함수
-    """
-    # mean values 계산
     mean_completed = X['Completed'].mean()
     mean_entries = X['Total Entries'].mean()
     
-    # 모델을 사용하여 age별 rate 계산
     age_rates = {}
     age_groups = pd.cut(X['age'], bins=[0, 15, 25, 35, 45, 100])
     
@@ -141,20 +136,6 @@ if int(input_age) > 0 and int(input_watched) > 0:
     completed, entries = predict_single_user(input_age, input_watched, model, scaler)
     st.write(f"The predicted total number of anime in user entry list: {entries}")
     st.write(f"The predicted number of anime completed by user: {completed}")
-    
-
-    # prediction = predict_watching_stats(input_age, input_watched, model, scaler)
-    # st.write(f"The predicted total number of anime in user entry list: {prediction['predicted_entries']}")
-    # st.write(f"The predicted number of anime completed by user: {prediction['predicted_completed']}")
-    # st.write(f"The predicted completion Rate: {prediction['predicted_completion_rate']:.2f}")
-
-
-
-
-
-
-
-
 
 # --------------------------------------------------------------------------------
 # 3D visualization about residual
@@ -326,40 +307,3 @@ def visualize_feature_interactions(X_test, y_test, y_pred, feat1, feat2):
 visualize_feature_interactions(X_test, y_test, y_pred, scatter_first_feature, scatter_second_feature)
 st.pyplot(plt)
 
-# --------------------------------------------------------------------------------
-# Boxplot depending on a feature
-
-# st.write("")
-# st.write("")
-# st.write("")
-# st.markdown('<p class="big-font">Application for showing error boxplots</p>', unsafe_allow_html=True)
-
-# boxplot_features_options = {
-#     'age': 'Age',
-#     'Days Watched': 'The total number of watching days',
-#     'Completed': 'The number of anime completed',
-#     'Total Entries': 'The total number of anime in user entry list',
-# }
-
-# boxplot_first_feature = st.selectbox('Select feature:', options=list(boxplot_features_options.keys()), format_func=lambda x: boxplot_features_options[x])
-
-# def visualize_error_boxplots(X_test, y_test, y_pred, feature):
-#     errors = np.abs(y_test - y_pred)
-#     results_df = pd.DataFrame(X_test.copy())
-#     results_df['Error'] = errors
-#     plt.figure(figsize=(15, 12))
-#     plt.suptitle('Error Distribution by Feature Ranges', fontsize=16)
-    
-#     results_df[f'{feature}_bin'] = pd.qcut(results_df[feature], q=5, labels=[f'{i+1}' for i in range(5)])
-    
-#     sns.boxplot(data=results_df, x=f'{feature}_bin', y='Error')
-#     plt.xlabel(f'{feature}', fontsize=24)
-#     plt.ylabel('Error', fontsize=24)    
-#     plt.tight_layout()
-#     plt.show()
-
-# visualize_error_boxplots(X_test, y_test, y_pred, boxplot_first_feature)
-# st.pyplot(plt)
-
-
-# --------------------------------------------------------------------------------
