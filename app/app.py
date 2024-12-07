@@ -5,7 +5,16 @@ content_based = st.Page("content_based.py", title="Based on rated animes")
 home = st.Page("home.py", title = "Home")
 collaborative = st.Page("collaborative.py", title="Collaborative filtering")
 demographic = st.Page("demographic.py", title="Demographic based")
-test = st.Page("test_st.py", title="Test streamlit features")
-st.navigation(
-    [home, logistic_page, content_based, collaborative, demographic, test]
+login = st.Page("login_page.py", title="Login Page")
+signup = st.Page("signup_page.py", title="Signup new user")
+favourites = st.Page("favourites_page.py", title="Favourites")
+# favourites = st.Page("logout.py", title="Logout")
+
+if "username" in st.session_state and st.session_state["username"]:
+    st.navigation(
+        [home, logistic_page, content_based, collaborative, demographic, favourites]
+    ).run()
+else:
+    st.navigation(
+        [login, signup]
     ).run()
