@@ -1,4 +1,5 @@
 import streamlit as st
+from connector import sqlalchecmy_engine
 from datetime import datetime
 import matplotlib.pyplot as plt
 import seaborn as sns
@@ -10,18 +11,21 @@ from sklearn.ensemble import RandomForestRegressor
 from sklearn.preprocessing import StandardScaler
 from sklearn.metrics import mean_squared_error, r2_score
 import plotly.graph_objects as go
+import joblib
 
-df = pd.read_csv('../individual_scripts/Park/users_details_dataset_cleaned.csv')
-df['Birthday'] = pd.to_datetime(df['Birthday'])
-df['Birthday_year'] = df['Birthday'].dt.year
+query = "SELECT birthday_date, completed, total_entries, days_watched FROM user_profile_data"
+user_df = pd.read_sql(query, sqlalchecmy_engine)
+df = user_df
+
+df['Birthday_year'] = pd.to_datetime(df["birthday_date"], format='%Y-%m-%d').dt.year
 current_year = datetime.now().year
 df['age'] = current_year - df['Birthday_year']
-df['completion_rate'] = df.apply(lambda row: 0 if row['Completed'] == 0 or row['Total Entries'] == 0 else row['Completed'] / row['Total Entries'], axis=1)
-df = df[['age', 'Days Watched', 'Completed', 'Total Entries', 'completion_rate']]
+df['completion_rate'] = df.apply(lambda row: 0 if row['completed'] == 0 or row['total_entries'] == 0 else row['completed'] / row['total_entries'], axis=1)
+df = df[['age', 'days_watched', 'completed', 'total_entries', 'completion_rate']]
 
 
 def load_and_preprocess_data(df):
-    features = ['age', 'Days Watched', 'Completed', 'Total Entries']
+    features = ['age', 'days_watched', 'completed', 'total_entries']
     target = 'completion_rate'
     
     X = df[features]
@@ -93,8 +97,8 @@ def predict_watching_stats(age, days_watched, model, scaler):
     }
 
 def predict_single_user(age, days_watched, model, scaler):
-    mean_completed = X['Completed'].mean()
-    mean_entries = X['Total Entries'].mean()
+    mean_completed = X['completed'].mean()
+    mean_entries = X['total_entries'].mean()
     
     age_rates = {}
     age_groups = pd.cut(X['age'], bins=[0, 15, 25, 35, 45, 100])
@@ -104,7 +108,7 @@ def predict_single_user(age, days_watched, model, scaler):
         if len(group_data) > 0:
             
             group_input = np.array([[group_data['age'].mean(), 
-                                   group_data['Days Watched'].mean(),
+                                   group_data['days_watched'].mean(),
                                    mean_completed,
                                    mean_entries]])
             group_input_scaled = scaler.transform(group_input)
@@ -117,7 +121,7 @@ def predict_single_user(age, days_watched, model, scaler):
     input_scaled = scaler.transform(input_data)
     predicted_rate = model.predict(input_scaled)[0] * base_rate
     
-    avg_entries_per_day = X['Total Entries'].sum() / X['Days Watched'].sum()
+    avg_entries_per_day = X['total_entries'].sum() / X['days_watched'].sum()
     predicted_entries = int(days_watched * avg_entries_per_day * base_rate)
     
     predicted_completed = int(predicted_entries * predicted_rate)
@@ -205,9 +209,9 @@ col1, col2 = st.columns([1, 1])
 with col1:
     options = {
         'age': st.checkbox('Age', value=True),
-        'Days Watched': st.checkbox('The total number of watching days', value=True),
-        'Completed': st.checkbox('The number of anime completed', value=True),
-        'Total Entries': st.checkbox('The total number of anime in user entry list'),
+        'days_watched': st.checkbox('The total number of watching days', value=True),
+        'completed': st.checkbox('The number of anime completed', value=True),
+        'total_entries': st.checkbox('The total number of anime in user entry list'),
         'Actual': st.checkbox('Actual value', value=True),
         'Predicted': st.checkbox('Predicted value'),
     }
@@ -249,7 +253,6 @@ def visualize_prediction_distribution(y_test, y_pred):
     plt.xlabel('Days Watched')
     plt.ylabel('Density')
     plt.legend()
-    # plt.tight_layout()
     x_min, x_max = st.slider(
         'Select x-axis range',
         min_value=0.0,
@@ -275,16 +278,16 @@ st.markdown('<p class="big-font">Application for showing scatters between featur
 col3, col4 = st.columns([1, 1])
 
 scatter_features_options1 = {
-    'Total Entries': 'The total number of anime in user entry list',
-    'Completed': 'The number of anime completed',
+    'total_entries': 'The total number of anime in user entry list',
+    'completed': 'The number of anime completed',
     'age': 'Age',
-    'Days Watched': 'The total number of watching days',
+    'days_watched': 'The total number of watching days',
 }
 
 scatter_features_options2 = {
-    'Completed': 'The number of anime completed',
+    'completed': 'The number of anime completed',
     'age': 'Age',
-    'Total Entries': 'The total number of anime in user entry list',
+    'total_entries': 'The total number of anime in user entry list',
 }
 
 with col3:

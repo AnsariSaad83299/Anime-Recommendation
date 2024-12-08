@@ -2,7 +2,7 @@ import streamlit as st
 import pandas as pd
 import numpy as np
 from sklearn.metrics.pairwise import cosine_similarity
-from load_dataset import user_df_filtered, ratings_df, matching_columns_anime, anime_df, anime_features_df
+from load_dataset import user_df_filtered, ratings_df, matching_columns_anime, anime_features_df
 import joblib
 
 st.title("Demographic-Based Anime Recommendation")
