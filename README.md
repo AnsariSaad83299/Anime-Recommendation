@@ -1,6 +1,6 @@
 # Anime-Recommendation
 
-In this project we are working on creating a anime recommendation engine using user watch history and demographic data like user's location, age and gender.
+In this project we are working on creating a anime recommendation engine using user watch history and demographic data like user's location, age and gender. We have created a app in using streamlit which can be found under the app directory.
 
 ## Team members:
 | Name | UB Number | Email |
@@ -19,6 +19,61 @@ data_cleaning.ipynb: Contains various steps for cleaning the dataset considering
 
 Our Individual Scripts and reports are added to the **individual_scripts** folder
 
+## Steps to deploy the App:
+To launch the app you need to have postgres and the required packages installed.
+
+### Install Packages
+To install the reuired packages, create a python(3.12 used by us) virtual environment and activate it. Then execute from the anime-recommendation repo root directory:
+```
+pip install -r requirements.txt
+```
+
+### Setup Database
+We have used postgres@17, create a database with name: anime-recommendation.
+Update the file app/connector.py with your username and password for postgresql anime-recommendation database user.
+
+### Seed data to database
+You would need to seed the data that we used into your database. We have created two scripts to make the process straighforward.
+
+#### Create tables
+app/setup/db.sql: Run this SQL script to create the required table with the correct schema. 
+You can use the following command to do this. Remember to update your username in the command.
+```
+psql -U {username} -d "anime-recommendation" -a -f app/setup/db.sql
+```
+
+#### Load data from the CSVs
+We need the data used to train our model to be available in the database to be able to use the predictions.
+You can download the datasets from: https://drive.google.com/file/d/1FHEQVYllCuk25abFE4bbBOIYVXtBvXG7/view?usp=sharing
+This zip file has two directories: cleaned_datasets and joined_datasets
+
+Extract the zip and store it in the Anime-recommendation repo root directory.
+Expected folder structure:
+
+- anime-recommendation
+  - app
+  - models
+  - cleaned_datasets
+  - joined_datasets
+  - individual_scripts
+  - README.md
+  - requirements.txt 
+
+Now execute the app/setup/seed_data.py script. Make sure to update the app/connector.py with your postgres user's username and password before running the seed script.
+
+You can execute it with this command from anime-recommendation repo root directory:
+```
+PYTHONPATH=./app python app/setup/seed_data.py
+```
+
+### Deploy the app:
+Once all packages and tables are setup, you can launch the streamlit app by running this command from anime-recommendation repo root directory:
+```
+PYTHONPATH=./app streamlit run app/app.py
+```
+You should now be able to access the site at: http://localhost:8501
+
+
 ## Mohd Saad Mohd Intesar Ansari (50607542):
 - **Question 1:** Do people like long animes or short animes?
 - **Question 2:** which Genres are the most popular?
@@ -35,6 +90,7 @@ Our Individual Scripts and reports are added to the **individual_scripts** folde
     - [Question 1 Analysis- Algo 2](https://github.com/AnsariSaad83299/Anime-Recommendation/blob/main/individual_scripts/RC/RC_ML_Analysis2.ipynb), [Question 1 Analysis Report- Algo 2](https://github.com/AnsariSaad83299/Anime-Recommendation/blob/main/individual_scripts/RC/RC_ML_Analysis2.pdf)
     - [Question 2 Analysis- Algo 1](https://github.com/AnsariSaad83299/Anime-Recommendation/blob/main/individual_scripts/RC/RC_ML_Analysis3.ipynb), [Question 2 Analysis Report- Algo 1](https://github.com/AnsariSaad83299/Anime-Recommendation/blob/main/individual_scripts/RC/RC_ML_Analysis3.pdf)
     - [Question 2 Analysis- Algo 2](https://github.com/AnsariSaad83299/Anime-Recommendation/blob/main/individual_scripts/RC/RC_ML_Analysis4.ipynb), [Question 2 Analysis Report- Algo 2](https://github.com/AnsariSaad83299/Anime-Recommendation/blob/main/individual_scripts/RC/RC_ML_Analysis4.pdf)
+
 ## Rutuja Badve (50604168):
 - **Question 1:** Do different age groups prefer anime with varying durations?
 - **Question 2:** Does the number of episodes affect the score of anime?
