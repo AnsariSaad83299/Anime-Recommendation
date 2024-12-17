@@ -11,6 +11,23 @@ In this project we are working on creating a anime recommendation engine using u
 | Rutuja Badve | 50604168 | rutujara@buffalo.edu | 
 
 ## Description:
+In recommendation of an anime there are two scenarios: 
+- we have a completely new person who hasn't watched any anime
+- we have a person who has already seen a few anime and wants to watch new anime
+
+In most anime streaming websites like Crunchyroll, torrent sites like zorotv we do not have proper suggestions based on either of these.
+They mostly have generic recommendations like top airing, top watched, top rated etc. We want to provide a more personalised experience to a person
+so that they have the best anime experience.
+
+We are building a recommendation engine that can work on either scenario. We have used a dataset available in Kaggle which is created by scraping data from MyAnimeList
+
+### Highlights:
+- We have a demographic-based recommendation system that takes a user's age, gender, and location to determine the best anime based on the animes watched by users with a similar demographic. This system also tries to provide a varied range of animes so that a new user can be introduced to diverse animes to explore.
+- We have a content-based recommendation system that suggests the best animes that are similar to previously viewed anime based on similarity.
+- We have a collaborative recommendation system that identifies similar users on the basis of previous ratings to suggest animes that are famous among users with similar tastes.
+- We have done extensive data cleaning to get user's location as they were not directly available. The location field had entries with just state in a country, or even country names in multiple formats like two letter codes, three letter codes, complete names, alternate names.
+
+## File Structure
 We have multiple Notebooks that currently serve different purposes.
 
 data_fetching.ipynv: Downloads the dataset files from Kaggle and stores them in datasets directory.
