@@ -23,8 +23,11 @@ We are building a recommendation engine that can work on either scenario. We hav
 
 ### Highlights:
 - We have a demographic-based recommendation system that takes a user's age, gender, and location to determine the best anime based on the animes watched by users with a similar demographic. This system also tries to provide a varied range of animes so that a new user can be introduced to diverse animes to explore.
-- We have a content-based recommendation system that suggests the best animes that are similar to previously viewed anime based on similarity.
-- We have a collaborative recommendation system that identifies similar users on the basis of previous ratings to suggest animes that are famous among users with similar tastes.
+
+- We have a content-based recommendation system that suggests the best animes that are similar to previously viewed anime based on similarity. We take the input the animes the user has watched and their corresponding rating. We then calculate `user_preference_vector` which is the weighted average of the features of anime based on the ratings. Hence the animes rated lower have low contribution to the recommendation of new animes. We use KNN to find similar animes and the similarity metric is cosine similarity
+
+- We have a collaborative recommendation system that identifies similar users on the basis of previous commonly watched animes to suggest new animes to the target user that are famous among the other users with similar tastes.
+
 - We have done extensive data cleaning to get user's location as they were not directly available. The location field had entries with just state in a country, or even country names in multiple formats like two letter codes, three letter codes, complete names, alternate names.
 
 ## File Structure
